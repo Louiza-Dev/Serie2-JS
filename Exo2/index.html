@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <h2>Mon Exo2 J-S</h2>
+          <!-- <form class="" action="index.html" method="post">
+            <input onclick="displayAlert()" type="text" id="ville" placeholder="Ville" value="" required> -->
+            <!-- <input type="text" id="user_login" name="user_login" placeholder="pseudo@gmail.com" autofocus> -->
+            <!-- <p><button onclick="displayInput()">ok</button></p> -->
+          <!-- </form> -->
+          <!-- <form
+            <input type="text" name="nom" size=16 value="Entrez ici votre nom" onFocus="javascript:this.value=''" />
+            <input type="submit" value="Valider" />
+          </form> -->
+          <form class="" action="index.html" method="post">
+            <p>TestOnfocusBck</p>
+            <input type="text" onfocus="myTest1(this)">
+            <p></p>
+            <p>Exo4</p>
+            <input type="text" id="tes2" value="sup"><button type="button"  onfocus="myTest2()">RAZ</button>
+            <p></p>
+            <p>TestChng.value</p>
+            <input type="text" id="tes3" onblur="myTest3()">
+            <p></p>
+            <p>Exo2</p>
+            <input type="text" id="tes4" onblur="myTest4()" value="">
+            <p></p>
+            <p>Exo3</p>
+            <input type="text" id="tes5" onblur="myTest5()" value="">
+          </form>
+          <!-- <form method="post" action="/action.php">
+            <p>Email : <input type="text" name="email" id="email"/></p>
+            <p>Mot de passe : <input type="password" name="password" id="password"/></p>
+            <p><input type="submit"/></p>
+          </form> -->
+        </div>
+      </div>
+    </div>
+                          <script>
+                          function myTest1(x) {
+                            x.style.background = "yellow";
+                            // alert('Merci de votre participation');
+                          }
+                          function myTest2() {
+                            var inp2 = document.getElementById("tes2");
+                            inp2.value = null;
+                          }
+                          function myTest3() {
+                            var inp3 = document.getElementById("tes3");
+                            inp3.value = inp3.value.toUpperCase();
+                          }
+                          function myTest4() {
+                            var inp4 = document.getElementById("tes4");
+                            inp4.value = alert('Merci de votre participation');
+                          }
+                          function myTest5() {
+                            var inp5 = document.getElementById("tes5");
+                            inp5.value = alert(inp5.value);
+                          }
+                          </script>
+
+
+    <!-- <script type="text/javascript">
+      function displayAlert(){
+        var inputAlert = document.getElementById('ville').value;
+        if (inputAlert){
+          alert('Merci de votre participation');
+        } else {
+          alert('Merci de votre participation');
+        }
+      }
+    </script> -->
+    <!-- <script type="text/javascript">
+document.getElementById('password').focus();
+</script> -->
+
+    <!-- <script>
+    window.alert('Nom');
+    window.alert('Prenom');
+    window.alert('Ville'); -->
+
+  </body>
+</html>

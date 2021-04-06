@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo6</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h2 class="text-center">Mon Exo6 J-S</h2>
+          <div class="row justify-content-around">
+              <!-- <div class="img1">
+                <img src="image1.jpg"
+                  onmouseover="this.src='image1_2.jpg';"
+                  onmouseout="this.src='image1.jpg';">
+                </img>
+              </div>
+              <div class="img2">
+                <img src="image2.jpg"
+                  onmouseover="this.src='image2_2.jpg';"
+                  onmouseout="this.src='image2.jpg';">
+                </img>
+              </div>
+              <div class="img3">
+                  <img src="image3.jpg"
+                    onmouseover="this.src='image3_2.jpg';"
+                    onmouseout="this.src='image3.jpg';">
+                  </img>
+              </div>
+              <div class="img4">
+                  <img src="image4.jpg"
+                    onmouseover="this.src='image4_2.jpg';"
+                    onmouseout="this.src='image4.jpg';">
+                  </img>
+              </div>
+              <div class="img5">
+                  <img src="image5.jpg"
+                    onmouseover="this.src='image5_2.jpg';"
+                    onmouseout="this.src='image5.jpg';">
+                  </img>
+              </div> -->
+              <img id="image1" onmouseover="revoiImage(id)" onmouseout=retournImg(id) src="image1.jpg" alt="">
+              <img id="image2" onmouseover="revoiImage(id)" onmouseout=retournImg(id) src="image2.jpg" alt="">
+              <img id="image3" onmouseover="revoiImage(id)" onmouseout=retournImg(id) src="image3.jpg" alt="">
+              <img id="image4" onmouseover="revoiImage(id)" onmouseout=retournImg(id) src="image4.jpg" alt="">
+              <img id="image5" onmouseover="revoiImage(id)" onmouseout=retournImg(id) src="image5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+      function revoiImage(image){
+      document.getElementById(image).src = image + "_2.jpg";
+      }
+      function retournImg(image) {
+        document.getElementById(image).src = image + ".jpg";
+      }
+    </script>
+  </body>
+</html>
